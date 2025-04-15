@@ -22,8 +22,8 @@ const App = () => {
   return (
     <div className={darkMode ? "dark" : ""}>
       <div className="min-h-screen flex items-center justify-center py-20 px-4 bg-white text-black dark:bg-gray-900 dark:text-white relative transition-colors duration-300">
-        <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl rounded-xl p-6 sm:p-8 border border-black/10 dark:border-white/10 bg-white dark:bg-gray-800 hover:-translate-y-1 transition-all">
-          <h1 className="mb-5 text-2xl font-semibold">Currency Converter</h1>
+        <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl rounded-xl p-6 sm:p-8 border border-black/10 dark:border-white/10 bg-white dark:bg-gray-800">
+          <h1 className="mb-5 text-2xl font-semibold text-center">Currency Converter</h1>
 
           <div className="mt-4 mb-4">
             <label
@@ -70,9 +70,9 @@ const App = () => {
           </div>
 
           {isLoading ? (
-            <p>Loading exchange rates...</p>
+            <p className="text-xl font-semibold text-center">Loading exchange rates...</p>
           ) : error ? (
-            <p>Error fetching rates</p>
+            <p className="text-xl font-semibold text-center">Error fetching rates</p>
           ) : (
             <h2 className="text-xl font-semibold text-center">
               {amount} {fromCurrency} = {convertedAmount} {toCurrency}
