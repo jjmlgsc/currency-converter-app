@@ -7,7 +7,7 @@ interface CurrencyState {
 
 const initialState: CurrencyState = {
   fromCurrency: "USD",
-  toCurrency: "EUR",
+  toCurrency: "PHP",
 };
 
 const currencySlice = createSlice({

@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Base styles */
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Space Grotesk', sans-serif;
-  background: #1D293D;
-  color: #00C7D1;
+  background: white;
+  color: black;
+}
+
+/* Dark mode overrides */
+.dark html,
+.dark body {
+  background: #111827;
+  color: white;
 }
