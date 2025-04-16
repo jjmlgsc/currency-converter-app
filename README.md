@@ -5,3 +5,4 @@ A simple currency converter app that uses the following technologies:
 - [ ] TypeScript
 - [ ] Redux
 - [ ] TanStack Query
+- [ ] Tailwind CSS
